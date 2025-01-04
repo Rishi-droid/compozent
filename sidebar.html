@@ -1,29 +1,43 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sidebar.css">
-    <title>Weather forecast app</title>
-    <script
-    src="https://fontawesome.com/.js"
-    crossOrigin="anonymous">
-    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Weather Forecast App</title>
 </head>
 <body>
-
     <div class="wrapper">
-        <div class ="sidebar">
+        <div class="sidebar">
             <form action="" class="search" id="search">
                 <input type="text" id="query" placeholder="search...">
                 <button>
                     <i class="fas fa-search"></i>
-                </button>  
+                </button>
             </form>
             <div class="weather-icon">
-            <img src="images/sun.jpg" alt="" id="weather-icon"/>
-            </div>  
+                <img src="images/sun.jpg" alt="Weather Icon" id="weather-icon" />
+            </div>
+            <div class="temperature">
+                <h1 id="temp">29</h1>
+                <span class="description">°c</span>
+            </div>
+            <div>
+                <span id="date">Monday, 4<sup>th</sup> Jan, 2025</span>
+            </div>
+            <div class="divider"> </div>
+            <div class="condition-rain">
+                <div class="condition">
+                    <i class="fas fa-cloud"></i>
+                    <div class="condition" id="condition">condition</div>
+
+            </div>
+            <div class="rain">
+                <i class="fas fa-tint"></i>
+                <p id="rain">0%</p>
         </div>
     </div>
-    <script src ="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
