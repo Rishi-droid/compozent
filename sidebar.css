@@ -23,7 +23,7 @@ body{
 
 }
 img{
-    width: 60%;
+    width: 80%;
 }
 .wrapper{
    display: flex;
@@ -42,39 +42,96 @@ img{
     justify-content: space-between;
     background-color: lightblue;
 }
-.search{
-    display: flex;
-    align-items:baseline;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    position: relative;
-    
-}
-.search input{
-    width: 170px;
-    padding:5px;
-    border:2px  ;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-}   
+
+
 
 
 .search input:focus {
     border-color: #3366cc; /* Change border color on focus */
     box-shadow: 0 0 5px rgba(51, 102, 204, 0.5); /* Add a glow effect */
 }
-.search button{
+.search {
+    display: flex; /* Aligns input and button horizontally */
+    align-items: center; /* Vertically centers elements */
+    justify-content: flex-start; /* Aligns to the left */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.search input {
+    width: 170px;
+    height: 40px; /* Same height as the button */
+    padding: 5px 10px;
     border: 2px solid #5598fd;
-    min-width: 55px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+.search button {
+    height: 40px; /* Match the height of the input field */
+    width: 55px; /* Fixed width for the button */
+    border: 2px solid #5598fd;
     border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: var(--primary-clr);
-    font-size:20px;
+    font-size: 20px;
     color: #fff;
     cursor: pointer;
+    display: flex; /* Centers the icon inside */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Include border in height calculation */
+}
+
+
+.sidebar .categories{
+    margin-bottom: 20px;
+}
+.weather-icon
+{
+
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top:20px;
+}
+.weather-icon #icon{
+    width: 80%;
+    object-fit: cover;
+}
+.temperature {
+    display: flex; /* Aligns the temperature and unit horizontally */
+    align-items: center; /* Vertically centers them */
+    margin-top: 20px;
+}
+
+.temperature #temp {
+    font-size: 50px; /* Size for temperature */
+    font-weight: 400; /* Normal weight */
+    line-height: 1; /* Tight line height */
+    color: #333; /* Dark text color */
+}
+
+.temperature .description {
+    font-size: 30px; /* Smaller size for °C */
+    font-weight: 300; /* Light weight */
+    margin-left: 5px; /* Small gap between number and °C */
+    color: #666; /* Slightly lighter color */
+}
+#date{
+    font-size: 13px;
+}
+.divider{
+    margin: 20px 0;
+    border-bottom: 1px solid black
+}
+.condition-rain{
+    font-size: 12px;
+    text-transform:capitalize;
+
 }
