@@ -135,3 +135,18 @@ img{
     text-transform:capitalize;
 
 }
+.condition-rain div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+
+}
+.condition-rain div i{
+    width: 20px;
+}
+.location{
+    display: flex;
+    
+}
