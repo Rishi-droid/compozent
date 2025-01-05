@@ -34,7 +34,7 @@ img{
 
 }
 .sidebar{
-    
+    display: flex;
     width: 20%;
     min-width: 250px;
     padding: 20px;
@@ -147,6 +147,134 @@ img{
     width: 20px;
 }
 .location{
+    margin-top: 19px;
+}
+.location-icon{
     display: flex;
-    
+    align-items: center;
+    font-size: 12px;
+    gap: 20px;
+    margin-top: 10px;
+}
+.main{
+    width: 100%;
+    min-width: 400px;
+    padding: 20px 40px;
+    position: relative;
+    padding-bottom: 90px;
+    background-color: rgb(182, 204, 212);
+}
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .options{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.options button{
+    border-color: rgb(182, 204, 212);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 540px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background: transparent;
+}
+.options button.active{
+    color: var(--primary-clr);
+}
+nav .units button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #1a1a1a;
+    background-color: rgb(197, 207, 211);
+}
+.units button.ative{
+    color: rgb(197, 207, 211);
+    background-color: #1a1a1a;
+}
+.main .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+.cards .card{
+    width: 100px;
+    height: 130px;
+    border-radius: 20px;
+    color: #1a1a1a;
+    background-color: rgb(197, 207, 211);
+    text-align: center;
+    padding: 10px 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card h2{
+    font-size: 15px;
+    font-weight: 600;
+}
+.card .card-icon{
+    width: 50%;
+    margin: 0 auto;
+}
+.card .day-temp{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highlights{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+.highlights .heading{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.highlights .card2{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    color: #1a1a1a;
+    background-color: rgb(197, 207, 211);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card2 .card-heading{
+    color: rgb(121, 148, 158);
+    font-weight: 600;
+}
+.card2 .content{
+    margin-top: 20px;
+}
+.card2 .content p:first-child{
+    text-align: center;
+    font-size: 30px;
+}
+.card2 .content p:last-child{
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: left;
+}
+.credits{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(121, 148, 158);
+    position: absolute;
+    bottom: 30px;
+    left: 35%;
+    transform: translateX(50%);
 }
